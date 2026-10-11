@@ -12,6 +12,21 @@
 .agripilot-tags span{font-size:11px;font-weight:650;padding:7px 10px;border:1px solid #c5d4c4;border-radius:99px;color:var(--green);background:#f6faf5}
 .agripilot-privacy{border-left:3px solid var(--gold);background:#e6ecdf;padding:11px 13px;border-radius:0 9px 9px 0;color:var(--green);font-size:13px;font-weight:650}
 @media(max-width:680px){.feature-agripilot{grid-template-columns:1fr;gap:20px}.agripilot-visual{min-height:175px}.agripilot-wordmark{font-size:clamp(42px,12vw,70px)}}
+
+/* Carte des cultures — vitrine du projet public de la ferme-école */
+.feature-carte-cultures{grid-column:1/-1;display:grid;grid-template-columns:minmax(230px,.8fr) minmax(0,1.4fr);gap:28px;align-items:center;background:linear-gradient(120deg,#f0f3ec,#faf6ed)}
+.carte-cultures-visual{min-width:0;background:#fff;border:1px solid #d5e2d4;border-radius:12px;padding:22px 23px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.carte-cultures-title{display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:13px;color:var(--green);font-weight:800}
+.carte-cultures-year{border-radius:999px;background:#e2eddc;border:1px solid #cbdaca;padding:4px 9px;white-space:nowrap;color:#345940;font-size:11px}
+.carte-parcel-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px}
+.carte-parcel-grid span{display:grid;place-items:center;min-width:0;min-height:36px;border:1px solid #a7c2ae;border-radius:5px;background:#e7f0e5;font:700 11px system-ui,sans-serif;color:#31583b}
+.carte-parcel-grid span:nth-child(6n+2),.carte-parcel-grid span:nth-child(6n+4){background:#f4ead3;border-color:#cfc1a3;color:#6c6148}
+.carte-cultures-legend{font-size:11px;color:#69796c}
+.feature-carte-cultures h3{font-size:clamp(29px,3vw,39px);line-height:1.15}
+.feature-carte-cultures p{font-size:15px;line-height:1.7}
+.carte-cultures-link{display:inline-flex;align-items:center;gap:8px;margin-top:7px;background:var(--green);color:#fff;font-size:13px;font-weight:800;padding:12px 17px;border-radius:8px;text-decoration:none}
+.carte-cultures-link:hover,.carte-cultures-link:focus-visible{background:#356944}
+@media(max-width:680px){.feature-carte-cultures{grid-template-columns:1fr;gap:20px}.carte-cultures-visual{padding:17px}.carte-parcel-grid span{min-height:30px;font-size:10px}}
 </style></head><body>
 <header class="nav"><a class="logo" href="#top">JK</a><nav><a href="#experience">Expériences</a><a href="#projects">Projets</a><a href="#skills">Compétences</a><a href="#contact">Contact</a><a href="https://github.com/jonathan777888">GitHub ↗</a></nav></header>
 <main><section class="hero" id="top"><div><p class="eyebrow">PORTFOLIO · QUÉBEC</p><h1>Jonathan<br>Kpakpo</h1><h2>Junior DevOps & Software Engineer</h2><div class="rule"></div><p class="intro">Je construis des outils numériques où la technologie rencontre l’apprentissage, l’agriculture et la foi.</p><div class="actions"><a class="primary" href="#experience">Voir mes expériences →</a><a class="secondary" href="https://github.com/jonathan777888">GitHub ↗</a></div><div class="motif"><i>✝</i><span></span><b>→</b></div></div><div class="art"><div class="sun"></div><div class="field"></div><div class="board"><code>build → test → deploy
@@ -36,9 +51,22 @@ Agriculture + Technology</code></div><div class="plant">🌱</div><div class="no
 <div class="agripilot-tags"><span>AgriTech</span><span>JavaScript</span><span>HTML / CSS</span><span>Analyse de gestion</span></div>
 <div class="agripilot-privacy">🔒 Outil propriétaire — accès et code source non partagés dans ce portfolio.</div>
 </div></article>
-<article class="feature"><div class="mark">✎</div><small>02 · PERSONNEL</small><h3>Bible Study Canvas</h3><p>Interface tactile et extensible pour étudier, écrire et dessiner.</p><div class="links"><a href="https://github.com/jonathan777888/bible-study-os">GitHub ↗</a></div></article>
-<article class="feature"><div class="mark">♧</div><small>03 · AGRITECH</small><h3>La Ferme de l’Avenir OS</h3><p>Studio créatif pour organiser une œuvre, ses personnages et son univers.</p><div class="links"><a href="https://github.com/jonathan777888/la-ferme-avenir-os">GitHub ↗</a></div></article>
-<article class="feature"><div class="mark">△</div><small>04 · IA & LOGICIELS</small><h3>Engineer Method OS</h3><p>Cartographie structurée des compétences, cours et certificats.</p><div class="links"><a href="https://github.com/jonathan777888/engineer-method-os">GitHub ↗</a></div></article></div></section>
+<article class="feature feature-carte-cultures" id="carte-cultures-card" aria-labelledby="carte-cultures-title">
+<div class="carte-cultures-visual" role="img" aria-label="Schéma illustratif des 24 parcelles du Moyen Jardin, disposées en quatre rangées et six colonnes">
+<div class="carte-cultures-title"><span>Moyen Jardin</span><span class="carte-cultures-year">Rotation 2027</span></div>
+<div class="carte-parcel-grid"><span>A1</span><span>A2</span><span>A3</span><span>A4</span><span>A5</span><span>A6</span><span>B1</span><span>B2</span><span>B3</span><span>B4</span><span>B5</span><span>B6</span><span>C1</span><span>C2</span><span>C3</span><span>C4</span><span>C5</span><span>C6</span><span>D1</span><span>D2</span><span>D3</span><span>D4</span><span>D5</span><span>D6</span></div>
+<div class="carte-cultures-legend">24 parcelles · 240 planches · illustration schématique</div>
+</div>
+<div>
+<small>02 · AGRITECH · APPLICATION PUBLIQUE</small>
+<h3 id="carte-cultures-title">Carte des cultures — Ferme-école</h3>
+<p>Application web interactive que j’ai développée pour visualiser l’organisation des cultures, des parcelles et des planches de la ferme-école. La carte présente notamment les 24 parcelles et 240 planches du Moyen Jardin, avec une légende des cultures.</p>
+<p>Elle permet également de comprendre le parcours de rotation prévu en 2027 à partir des cultures de 2026, tout en signalant les affectations qui restent à vérifier. Un projet qui relie directement mes apprentissages agricoles au développement d’outils numériques.</p>
+<a class="carte-cultures-link" href="https://carte-cultures-ferme-ecole.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la carte interactive des cultures de la ferme-école dans un nouvel onglet">Explorer la carte interactive ↗</a>
+</div></article>
+<article class="feature"><div class="mark">✎</div><small>03 · PERSONNEL</small><h3>Bible Study Canvas</h3><p>Interface tactile et extensible pour étudier, écrire et dessiner.</p><div class="links"><a href="https://github.com/jonathan777888/bible-study-os">GitHub ↗</a></div></article>
+<article class="feature"><div class="mark">♧</div><small>04 · AGRITECH</small><h3>La Ferme de l’Avenir OS</h3><p>Studio créatif pour organiser une œuvre, ses personnages et son univers.</p><div class="links"><a href="https://github.com/jonathan777888/la-ferme-avenir-os">GitHub ↗</a></div></article>
+<article class="feature"><div class="mark">△</div><small>05 · IA & LOGICIELS</small><h3>Engineer Method OS</h3><p>Cartographie structurée des compétences, cours et certificats.</p><div class="links"><a href="https://github.com/jonathan777888/engineer-method-os">GitHub ↗</a></div></article></div></section>
 <section class="wrap all" id="projects"><div class="head"><div><p class="eyebrow">TOUT LE TRAVAIL</p><h2>Mes projets GitHub</h2></div><p>Un portfolio vivant en développement logiciel, DevOps, intelligence artificielle et technologie agricole.</p></div><div class="filters" id="filters"></div><div class="grid" id="grid"></div></section>
 <section class="wrap skills" id="skills"><div><p class="eyebrow">COMPÉTENCES</p><h2>De l’idée au déploiement.</h2></div><div class="skillgrid"><article><b>01</b><h3>Développement</h3><p>Python · JavaScript · TypeScript · React · Flask · Node.js · SQL</p></article><article><b>02</b><h3>DevOps & Cloud</h3><p>Docker · CI/CD · GitHub Actions · Tekton · Kubernetes · Tests</p></article><article><b>03</b><h3>Domaines</h3><p>IA générative · AgriTech · Outils d’apprentissage · Systèmes personnels</p></article></div></section></main>
 <footer id="contact"><div><p class="hand">Construisons quelque chose d’utile.</p><h2>Disponible pour des projets<br>junior et des collaborations.</h2></div><div class="contact"><a href="https://github.com/jonathan777888">Me contacter sur GitHub ↗</a><span>Québec, Canada</span></div></footer>
